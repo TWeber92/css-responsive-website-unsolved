@@ -5,13 +5,211 @@
 */
 
 @media (min-width: 1024px) {
-  /* .top-navigation .trigram {
-    display: none;
-  } */
-
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+  .trigram {
+    display: none;
+  }
+  .top-navigation a:hover {
+    color: black;
+  }
+  .top-navigation ul li:nth-child(3) {
+    display: none;
+  }
+  .teammate-social-icons div:hover {
+    background-color: rgb(71, 69, 69);
+  }
+  .social-icons > div:hover span {
+    color: white;
+  }
+  .social-icons > div:hover .icon {
+    background-color: white;
+  }
+  .email a:hover {
+    color: white;
+    border-bottom: solid 1px white;
+  }
+  .phones a:hover {
+    color: white;
+  }
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-content {
+    box-shadow: 0px 2px 5px #515050;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+  }
+  .portfolio-content {
+    width: auto;
+    padding: 110px 30px 60px 30px;
+  }
+  .section-info p.subtext,
+  .section-info h1 {
+    width: auto;
+    padding: 0 1px;
+  }
+  .portfolio-list {
+    flex-direction: column;
+  }
+  .portfolio-item {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+  .portfolio-item img {
+    padding: 0 25px 0 0;
+  }
+  .top-navigation > ul {
+    display: none;
+  }
+  .teammates-content {
+    padding: 25px;
+    gap: 30px;
+  }
+  .teammates-content p.subtext {
+    padding: 0 60px;
+  }
+  .teammates-content h2::before,
+  .teammates-content h2::after {
+    top: 0;
+  }
+  .teammates-list-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+  .teammates-list:before,
+  .teammates-list:after {
+    display: none;
+  }
+  .teammates-list-wrapper div {
+    align-items: center;
+  }
+  .teammate {
+    padding: 25px;
+    width: 50%;
+  }
+  .teammate .teammate-img-wrapper {
+    width: auto;
+  }
+  .teammate .teammate-data {
+    width: auto;
+  }
+  .teammate-social-icons > div {
+    background-color: rgb(71, 69, 69);
+  }
+  footer .social-icons span {
+    display: none;
+  }
+  footer .social-icons div {
+    width: auto;
+  }
+  footer .social-icons .icon {
+    background-color: white;
+  }
+  .footer-contacts {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .footer-contacts .phones {
+    width: 100%;
+  }
+  .footer-contacts ul li a {
+    color: white;
+  }
+}
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+@media (min-width: 360px) and (max-width: 767px) {
+  .header-content {
+    box-shadow: 0px 2px 5px #515050;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+  }
+  .portfolio-content {
+    width: auto;
+    gap: 40px;
+    padding: 110px 30px 60px 30px;
+  }
+  .section-info p.subtext {
+    width: 100%;
+    padding: 1px;
+  }
+  .section-info h2,
+  .section-info h1 {
+    padding: 0;
+  }
+  .content h2::after,
+  .content h2::before {
+    top: 0;
+  }
+  .portfolio-list {
+    flex-direction: column;
+    text-align: center;
+  }
+  .top-navigation > ul {
+    display: none;
+  }
+  .teammates-content {
+    padding: 20px 20px 40px 20px;
+    gap: 30px;
+  }
+  .teammates-content p.subtext {
+    padding: 0 18px;
+  }
+  .teammate {
+    border: solid 1px #969696;
+    padding: 10px;
+    flex-direction: row;
+    width: 100%;
+  }
+  .teammates-list-wrapper {
+    flex-wrap: wrap;
+  }
+  .teammates-list:before,
+  .teammates-list:after {
+    display: none;
+  }
+  .teammate-data {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .teammate-info {
+    width: 100%;
+  }
+  .teammate-img-wrapper img {
+    height: 100%;
+  }
+  .teammate-img-wrapper {
+    width: 100%;
+  }
+  .teammate-social-icons {
+    gap: 1.25em;
+  }
+  .teammate-social-icons > div {
+    background-color: rgb(71, 69, 69);
+  }
+  .social-icons {
+    flex-direction: column;
+  }
+  .footer-content {
+    gap: 30px;
+  }
+  footer .social-icons span {
+    color: white;
+  }
+  footer .social-icons .icon {
+    background-color: white;
+  }
+  .footer-contacts {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .footer-contacts ul li a {
+    color: white;
+  }
+}
